@@ -1,0 +1,227 @@
+@import 'variable';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $white-clr;
+    font-family: $font-open-sans;
+    font-size: 18px;
+    line-height: 36px;
+    color: $text-clr;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1{
+    font-family: $font-eb-garamond;
+    font-weight: 400;
+    font-size: 2.66rem;
+    line-height:1.5 ;
+    color: $heading-clr;
+}
+
+h2{
+    font-family: $font-eb-garamond;
+    font-weight: 400;
+    font-size: 2.66rem;
+    line-height:1.5 ;
+    color: $heading-clr;
+}
+
+h3{
+    font-family: $font-open-sans;
+    font-weight: 600;
+    font-size:1.11rem ;
+    line-height: 2;
+    color: $topic-clr;
+}
+
+span.span-title {
+    color: $primary-clr;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: $font-open-sans;
+}
+
+.btn {
+
+    a {
+        padding: 16px 40px;
+        background: $primary-clr;
+        border-radius: 8px;
+        transition: all ease-in-out 250ms;
+        font-family: $font-open-sans;
+        color: $white-clr;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+//header
+.header{
+    padding: 32px 0 30px 0;
+    text-align: center;
+}
+
+//hero section
+.hero-page{
+    background-image: url(/images/Rectangle\ 27.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.service-booking{
+    background-color:$background-clr;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .booking{
+        margin-top: -140px;
+        max-width: 814px;
+        background-color: $white-clr;
+        box-sizing: border-box;
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 16px;
+        .btn {
+            margin-top: 22px;
+        }
+    }
+}
+
+.personality{
+    background-color: $background-clr;
+    padding: 120px 0;
+
+    .container{
+        h2{
+            text-align: center;
+        }
+        .contents{
+            display: flex;
+            flex-direction: column;
+            gap: 52px;
+            margin-top: 64px;
+            .content-1{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 48px;
+                .content-left{
+                    .img{
+                        position: relative;
+                        svg {
+                            position: absolute;
+                            top: -40px;
+                            right: -53px;
+                        }
+                    }
+                }
+                .content-right{
+                    .text {
+                        gap: 16px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+            .content-2{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 48px;
+                .content-right{
+                    .img{
+                        position: relative;
+                        svg {
+                            position: absolute;
+                            top: -40px;
+                            left: -53px;
+                        }
+                    }
+                }
+                .content-left{
+                    .text {
+                        gap: 16px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+// Alone Section
+
+// .friend{
+//     display: grid;
+//     padding: 96px 0;
+//     grid-template-columns:repeat(2 ,1fr) ;
+//     align-items: center;
+//     .friend-right{
+//         margin-right: 150px;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 16px;
+//     }
+// }
+
+.friend{
+    padding: 96px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 98px;
+    .friend-right{
+        margin-right: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        p{
+            max-width: 576px;
+        }
+    }
+    border-bottom:1px solid #EBE9E9 ;
+}
+
+// Way Section
+.way{
+    
+    padding: 96px 0 56px 0;
+    text-align: center;
+    h2{
+        margin: 24px 0 16px 0;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
