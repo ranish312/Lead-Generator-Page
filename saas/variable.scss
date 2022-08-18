@@ -5,11 +5,21 @@ $font-open-sans: 'Open Sans', sans-serif;
 
 //Colors
 $primary-clr:#ff62A5;
+$primary-rgb-clr:#ff62A5;
 $white-clr:#FFFFFF;
 $heading-clr:#1A0B0A;
 $text-clr:rgba(26, 11, 10, 0.8);
 $topic-clr:#403934;
 $background-clr:#FFF7F6;
+$background-clr1:#3F0546;
+$extra-clr1:#FDFAFA;
+$extra-clr2:#F6FCF8;
+$border-clr:#EBE9E9;
+
+:root{
+    --primary-color:$primary-clr;
+    --primary-color-rgb:$primary-rgb-clr;
+}
 
 
 

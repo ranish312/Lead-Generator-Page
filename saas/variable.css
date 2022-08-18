@@ -1,1 +1,4 @@
-/*# sourceMappingURL=variable.css.map */
+:root {
+  --primary-color:$primary-clr;
+  --primary-color-rgb:$primary-rgb-clr;
+}/*# sourceMappingURL=variable.css.map */

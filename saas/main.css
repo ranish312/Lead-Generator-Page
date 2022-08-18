@@ -1,3 +1,8 @@
+:root {
+  --primary-color:$primary-clr;
+  --primary-color-rgb:$primary-rgb-clr;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -41,6 +46,13 @@ h3 {
   font-size: 1.11rem;
   line-height: 2;
   color: #403934;
+}
+
+h4 {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
 }
 
 span.span-title {
@@ -156,7 +168,6 @@ span.span-title {
 .friend {
   padding: 96px 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 98px;
   border-bottom: 1px solid #EBE9E9;
@@ -167,12 +178,16 @@ span.span-title {
   flex-direction: column;
   gap: 16px;
 }
-.friend .friend-right p {
+.friend .friend-right h2 {
+  max-width: 603px;
+}
+.friend .friend-right .text p {
   max-width: 576px;
+  gap: 20px;
 }
 
 .way {
-  padding: 96px 0 56px 0;
+  padding: 96px 0 120px 0;
   text-align: center;
 }
 .way h2 {
@@ -184,4 +199,306 @@ span.span-title {
   gap: 30px;
   max-width: 750px;
   margin: 0 auto;
+}
+.way .way-changes {
+  margin-top: 56px;
+}
+.way .way-changes .container {
+  display: flex;
+}
+.way .way-changes .container .change-before {
+  box-sizing: border-box;
+  border-radius: 16px 0px 0px 16px;
+  background: #FDFAFA;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.way .way-changes .container .change-before .points {
+  margin: 12px 0 8px 0;
+}
+.way .way-changes .container .change-before .points .point {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+.way .way-changes .container .change-before .points .point:not(:last-child) {
+  box-shadow: inset 0px -1px 0px #C8C8C8;
+}
+.way .way-changes .container .change-before .points .point p {
+  margin: 16px 0 24px 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+.way .way-changes .container .change-after {
+  box-sizing: border-box;
+  border-radius: 0px 16px 16px 0px;
+  background: #F6FCF8;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.way .way-changes .container .change-after .points {
+  margin: 12px 0 8px 0;
+}
+.way .way-changes .container .change-after .points .point {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+.way .way-changes .container .change-after .points .point:not(:last-child) {
+  box-shadow: inset 0px -1px 0px #C8C8C8;
+}
+.way .way-changes .container .change-after .points .point p {
+  margin: 16px 0 24px 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+.way .way-changes .container .change-after h4 {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.offer {
+  padding: 92px 0 64px 0;
+  background: #FFF7F6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.offer .section-title {
+  max-width: 750px;
+}
+.offer .section-title h2 {
+  margin: 16px 0;
+}
+.offer .section-title .btn {
+  display: inline-block;
+  margin: 40px 0 64px 0;
+}
+
+.curriculum {
+  padding: 120px 0;
+}
+.curriculum .container .topic-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.curriculum .container .topic-section h2 {
+  margin: 16px 0;
+}
+.curriculum .container .topic-section p {
+  max-width: 749px;
+}
+.curriculum .container .contents .content-1 {
+  display: flex;
+  gap: 40px;
+  margin: 72px 0 120px 0;
+}
+.curriculum .container .contents .content-1 .content-right {
+  max-width: 563px;
+}
+.curriculum .container .contents .content-1 .content-right h2 {
+  margin: 16px 0;
+}
+.curriculum .container .contents .content-1 .content-right .points {
+  margin-top: 40px;
+}
+.curriculum .container .contents .content-1 .content-right .points .point {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  gap: 11px;
+}
+.curriculum .container .contents .content-2 {
+  display: flex;
+  gap: 40px;
+}
+.curriculum .container .contents .content-2 .content-left {
+  max-width: 563px;
+}
+.curriculum .container .contents .content-2 .content-left h2 {
+  margin: 16px 0;
+}
+.curriculum .container .contents .content-2 .content-left .points {
+  margin-top: 40px;
+}
+.curriculum .container .contents .content-2 .content-left .points .point {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  gap: 11px;
+}
+
+.learning {
+  padding: 120px 0;
+  background: #FFF7F6;
+}
+.learning .container .topic-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.learning .container .topic-section h2 {
+  margin: 16px 0;
+}
+.learning .container .topic-section p {
+  max-width: 749px;
+}
+.learning .container .learning-contents {
+  margin-top: 64px;
+  display: flex;
+  gap: 30px;
+}
+.learning .container .learning-contents .content {
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #FFFFFF;
+  text-align: center;
+  padding: 24px 16px;
+  transition: all ease-in-out 250ms;
+}
+.learning .container .learning-contents .content h4 {
+  margin: 32px 0 16px 0;
+}
+.learning .container .learning-contents .content .img:hover {
+  transform: scale(1.05);
+}
+
+.owl-carousel {
+  background: #3F0546;
+  padding: 180px 0 112px 0;
+  display: flex;
+  justify-content: center;
+}
+.owl-carousel .owl-carousel-item .img-carousel img {
+  position: absolute;
+  top: 9090px;
+  left: 700px;
+}
+.owl-carousel .owl-carousel-item .content {
+  box-sizing: border-box;
+  padding: 84px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 16px;
+  max-width: 818px;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.payment {
+  padding: 120px 0;
+}
+.payment .container .payment-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.payment .container .payment-header .topic {
+  max-width: 749px;
+}
+.payment .container .payment-header .topic p {
+  margin-top: 16px;
+}
+.payment .container .payment-contents {
+  margin-top: 64px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.payment .container .payment-contents .payment-left .topic {
+  box-sizing: border-box;
+  border-radius: 8px 8px 0px 0px;
+  background: #FFF7F6;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+.payment .container .payment-contents .payment-left .lines {
+  box-sizing: border-box;
+  padding: 24px 0;
+  text-align: center;
+}
+.payment .container .payment-contents .payment-left .lines p {
+  margin-top: 10px;
+  font-family: "EB Garamond", serif;
+  font-size: 72px;
+  line-height: 80px;
+  color: #181818;
+}
+.payment .container .payment-contents .payment-left .points {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #FFFFFF;
+  padding: 24px;
+}
+.payment .container .payment-contents .payment-left .points .point {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  width: 100%;
+}
+.payment .container .payment-contents .payment-left .points .point:not(:last-child) {
+  border-bottom: 1px solid #ECECEC;
+}
+.payment .container .payment-contents .payment-left .points .point p {
+  margin: 24px 0;
+}
+.payment .container .payment-contents .payment-left .button {
+  text-align: center;
+}
+.payment .container .payment-contents .payment-right .topic {
+  box-sizing: border-box;
+  border-radius: 8px 8px 0px 0px;
+  background: #FFF7F6;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+.payment .container .payment-contents .payment-right .lines {
+  box-sizing: border-box;
+  padding: 24px 0;
+  text-align: center;
+}
+.payment .container .payment-contents .payment-right .lines p {
+  margin-top: 10px;
+  font-family: "EB Garamond", serif;
+  font-size: 72px;
+  line-height: 80px;
+  color: #181818;
+}
+.payment .container .payment-contents .payment-right .points {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #FFFFFF;
+  padding: 24px;
+  height: 634px;
+}
+.payment .container .payment-contents .payment-right .points .point {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  border-bottom: 1px solid #ECECEC;
+  width: 100%;
+}
+.payment .container .payment-contents .payment-right .points .point p {
+  margin: 24px 0;
+}
+.payment .container .payment-contents .payment-right .button {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
